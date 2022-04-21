@@ -277,7 +277,7 @@ class Client extends EventEmitter {
    *  .catch(console.error);
    */
   login(token = this.token) {
-  console.log('login')
+  //console.log('login')
     if (authorize(token)) {
     	return this.rest.methods.login(token);
     }
